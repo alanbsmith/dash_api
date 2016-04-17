@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  topic: MyString
+  subtopic: MyString
+  url: MyString
+  archive: false
+
+two:
+  topic: MyString
+  subtopic: MyString
+  url: MyString
+  archive: false
