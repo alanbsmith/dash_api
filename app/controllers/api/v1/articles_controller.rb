@@ -26,7 +26,7 @@ class Api::V1::ArticlesController < ApplicationController
 
   def destroy
     @article.destroy
-    respond_with status: 200
+    respond_with :api, :v1, @article
   end
 
   private
@@ -37,10 +37,10 @@ class Api::V1::ArticlesController < ApplicationController
 
   def article_params
     params.require(:article).permit(
-                                    :topic,
-                                    :subtopic,
+                                    :title,
                                     :url,
-                                    :archive
+                                    :archive,
+                                    :tag_list
                                    )
   end
 end

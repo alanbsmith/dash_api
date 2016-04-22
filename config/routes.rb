@@ -3,5 +3,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :articles, only: [:index, :show, :create, :update, :destroy]
     end
+
+    namespace :v2 do
+      resources :articles, only: [:index, :show, :create, :update, :destroy]
+    end
   end
 end

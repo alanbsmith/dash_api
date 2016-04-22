@@ -1,8 +1,7 @@
 class CreateArticles < ActiveRecord::Migration
   def change
     create_table :articles do |t|
-      t.string :topic
-      t.string :subtopic
+      t.string :title
       t.string :url
       t.boolean :archive
 
